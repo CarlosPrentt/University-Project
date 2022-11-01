@@ -88,11 +88,16 @@ public class Main {
                 for (int i = 0; i < university.getStudents().size(); i++) {
                     System.out.println(university.getStudents().get(i).getIdStudent() + ", Name: "
                     + university.getStudents().get(i).getName());
-                    int studentId = scan.nextInt();
+                }
+                int studentId = scan.nextInt();
+                for (int i = 0; i < university.getStudents().size(); i++) {
                     if(studentId == university.getStudents().get(i).getIdStudent()){
-                        System.out.println(university.getUniversityClasses().get(i).getName());
+                        for (int j = 0; j < university.getUniversityClasses().size(); j++) {
+                            System.out.println(university.getUniversityClasses().get(j).getName());
+                        }
                     }
                 }
+
             }
         }while(option != 6);
     }
