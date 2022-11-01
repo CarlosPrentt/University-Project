@@ -22,6 +22,7 @@ public class University {
     }
 
     public void registerStudent(Student student){
+        student.setIdStudent(students.size() + 1);
         students.add(student);
     }
 
