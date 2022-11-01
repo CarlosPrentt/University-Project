@@ -18,12 +18,6 @@ public class UniversityClass {
     public void setClassName(boolean className) {
         isClassName = className;
     }
-/*public String toString() {
-        return "\nClass: " + getName() +
-                " - Classroom number: " + getClassroom() +
-                " - Teacher: " + getTeacher().getName() +
-                " - Student list: " + getStudents();
-    }*/
 
     public ArrayList<Student> getStudentToAClass() {
         return students;
@@ -31,9 +25,9 @@ public class UniversityClass {
 
     public String toString() {
         return "\nClass: " + getName() +
-                " - Classroom number: " + getClassroom() +
-                " - Teacher: " + getTeacher().getName() +
-                " - Student list: " + getStudents();
+        " - Classroom number: " + getClassroom() +
+        " - Teacher: " + getTeacher().getName() +
+        " - Student list: " + getStudents();
     }
 
     public String toStringName() {
